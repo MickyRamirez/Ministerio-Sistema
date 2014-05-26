@@ -1,0 +1,2 @@
+$(document).ready(function () {$("#PostRubroId").bind("change", function (event) {$.ajax({async:true, data:$("#PostRubroId").serialize(), dataType:"html", success:function (data, textStatus) {$("#PostSubrubroId").html(data);}, type:"get", url:"\/cake\/soyasubrubros\/getByRubro"});
+return false;});});
